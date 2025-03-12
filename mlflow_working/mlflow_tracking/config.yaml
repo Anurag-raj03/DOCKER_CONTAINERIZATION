@@ -1,0 +1,23 @@
+mlflow:
+  tracking_uri: "file:///C:/Users/Anurag/OneDrive/Desktop/macine_operation/mlflow_working/mlruns"
+  experiment_name: "Sleep_Efficiency_Prediction"  
+  run_name: "Sleep_Efficiency_Prediction Random Forest Regression Model"
+  log_models: True
+  artifact_path: "saved_models/rf_model"
+
+
+
+model:
+  type: "RandomForestRegressor"
+
+training:
+  test_size: 0.2
+  random_state: 42
+  metric: "r2_score"
+
+logging:
+  log_level: "INFO"
+  log_file: "mlflow_tracking.log"  
+
+
+     

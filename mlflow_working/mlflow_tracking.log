@@ -1,0 +1,169 @@
+2025-03-12 17:32:53,776 - INFO - Experiment does not exist. Creating a new one.
+2025-03-12 17:32:53,864 - INFO - Pipeline Execution Started
+2025-03-12 17:33:03,288 - INFO - Data file found: C:\\Users\\Anurag\\OneDrive\\Desktop\\macine_operation\\mlflow_working\\DATA\Sleep_Efficiency.csv
+2025-03-12 17:33:04,199 - INFO - Data loaded successfully C:\\Users\\Anurag\\OneDrive\\Desktop\\macine_operation\\mlflow_working\\DATA\Sleep_Efficiency.csv
+2025-03-12 17:33:04,199 - INFO - File has been loaded successfully.
+2025-03-12 17:33:04,199 - INFO - Dropping the na values because the na values are very less
+2025-03-12 17:33:04,474 - INFO - Successfully deleted the the na values Because values are less than the threshold 25 
+2025-03-12 17:33:04,474 - INFO - Dropping the unwanted columns after the EDA on the Data
+2025-03-12 17:33:04,847 - INFO - Encoding column: Gender
+2025-03-12 17:33:04,866 - INFO - Encoding column: Smoking status
+2025-03-12 17:33:04,866 - INFO - Label encoding completed successfully!
+2025-03-12 17:33:05,087 - INFO - Preprocessing and feature scaling completed successfully.
+2025-03-12 17:33:05,087 - INFO - Splitting the data into the train test
+2025-03-12 17:33:05,153 - INFO - Data successfully split into train and test. Train shape: (221, 11), Test shape: (56, 11).
+2025-03-12 17:33:05,153 - INFO - Training the RandomForestRegressor model..
+2025-03-12 17:33:05,419 - INFO - Model Training completed successfully.
+2025-03-12 17:33:05,419 - INFO - Model trained successfully.
+2025-03-12 17:33:05,419 - INFO - Checking the r2_score of the model
+2025-03-12 17:33:05,514 - INFO - The R2 scor of the Regression Model is 42.7371
+2025-03-12 17:33:05,514 - INFO - Saving the Model in the Directoery
+2025-03-12 17:33:05,702 - INFO - Model Successfully Saved at this path C:\Users\Anurag\OneDrive\Desktop\macine_operation\mlflow_working\Saved_model\rf_model.pkl
+2025-03-12 17:33:05,703 - INFO - Model dumped successfully.
+2025-03-12 17:33:53,033 - ERROR - Error Occurred: Invalid artifact path: 'mlruns/models/'. Names may be treated as files in certain cases, and must not resolve to other names when treated as such. This name would resolve to 'mlruns/models'
+Traceback (most recent call last):
+  File "c:\Users\Anurag\OneDrive\Desktop\macine_operation\mlflow_working\mlflow_tracking\main.py", line 66, in main
+    mlflow.sklearn.log_model(
+  File "C:\Users\Anurag\AppData\Local\Programs\Python\Python311\Lib\site-packages\mlflow\sklearn\__init__.py", line 413, in log_model
+    return Model.log(
+           ^^^^^^^^^^
+  File "C:\Users\Anurag\AppData\Local\Programs\Python\Python311\Lib\site-packages\mlflow\models\model.py", line 866, in log
+    mlflow.tracking.fluent.log_artifacts(local_path, mlflow_model.artifact_path, run_id)
+  File "C:\Users\Anurag\AppData\Local\Programs\Python\Python311\Lib\site-packages\mlflow\tracking\fluent.py", line 1219, in log_artifacts
+    MlflowClient().log_artifacts(run_id, local_dir, artifact_path)
+  File "C:\Users\Anurag\AppData\Local\Programs\Python\Python311\Lib\site-packages\mlflow\tracking\client.py", line 2018, in log_artifacts
+    self._tracking_client.log_artifacts(run_id, local_dir, artifact_path)
+  File "C:\Users\Anurag\AppData\Local\Programs\Python\Python311\Lib\site-packages\mlflow\tracking\_tracking_service\client.py", line 875, in log_artifacts
+    self._get_artifact_repo(run_id).log_artifacts(local_dir, artifact_path)
+  File "C:\Users\Anurag\AppData\Local\Programs\Python\Python311\Lib\site-packages\mlflow\store\artifact\local_artifact_repo.py", line 57, in log_artifacts
+    verify_artifact_path(artifact_path)
+  File "C:\Users\Anurag\AppData\Local\Programs\Python\Python311\Lib\site-packages\mlflow\store\artifact\artifact_repo.py", line 461, in verify_artifact_path
+    raise MlflowException(
+mlflow.exceptions.MlflowException: Invalid artifact path: 'mlruns/models/'. Names may be treated as files in certain cases, and must not resolve to other names when treated as such. This name would resolve to 'mlruns/models'
+2025-03-12 17:47:01,303 - INFO - Using existing experiment: Sleep_Efficiency_Prediction
+2025-03-12 17:47:01,334 - INFO - Pipeline Execution Started
+2025-03-12 17:47:08,471 - INFO - Data file found: C:\\Users\\Anurag\\OneDrive\\Desktop\\macine_operation\\mlflow_working\\DATA\Sleep_Efficiency.csv
+2025-03-12 17:47:08,824 - INFO - Data loaded successfully C:\\Users\\Anurag\\OneDrive\\Desktop\\macine_operation\\mlflow_working\\DATA\Sleep_Efficiency.csv
+2025-03-12 17:47:08,825 - INFO - File has been loaded successfully.
+2025-03-12 17:47:08,825 - INFO - Dropping the na values because the na values are very less
+2025-03-12 17:47:08,867 - INFO - Successfully deleted the the na values Because values are less than the threshold 25 
+2025-03-12 17:47:08,868 - INFO - Dropping the unwanted columns after the EDA on the Data
+2025-03-12 17:47:09,024 - INFO - Encoding column: Gender
+2025-03-12 17:47:09,028 - INFO - Encoding column: Smoking status
+2025-03-12 17:47:09,029 - INFO - Label encoding completed successfully!
+2025-03-12 17:47:09,080 - INFO - Preprocessing and feature scaling completed successfully.
+2025-03-12 17:47:09,080 - INFO - Splitting the data into the train test
+2025-03-12 17:47:09,126 - INFO - Data successfully split into train and test. Train shape: (221, 11), Test shape: (56, 11).
+2025-03-12 17:47:09,126 - INFO - Training the RandomForestRegressor model..
+2025-03-12 17:47:09,349 - INFO - Model Training completed successfully.
+2025-03-12 17:47:09,349 - INFO - Model trained successfully.
+2025-03-12 17:47:09,349 - INFO - Checking the r2_score of the model
+2025-03-12 17:47:09,355 - INFO - The R2 scor of the Regression Model is 44.1597
+2025-03-12 17:47:09,355 - INFO - Saving the Model in the Directoery
+2025-03-12 17:47:09,549 - INFO - Model Successfully Saved at this path C:\Users\Anurag\OneDrive\Desktop\macine_operation\mlflow_working\Saved_model\rf_model.pkl
+2025-03-12 17:47:09,549 - INFO - Model dumped successfully.
+2025-03-12 17:48:16,778 - ERROR - Error Occurred: Invalid artifact path: 'mlruns/models/'. Names may be treated as files in certain cases, and must not resolve to other names when treated as such. This name would resolve to 'mlruns/models'
+Traceback (most recent call last):
+  File "c:\Users\Anurag\OneDrive\Desktop\macine_operation\mlflow_working\mlflow_tracking\main.py", line 68, in main
+    mlflow.sklearn.log_model(
+  File "C:\Users\Anurag\AppData\Local\Programs\Python\Python311\Lib\site-packages\mlflow\sklearn\__init__.py", line 413, in log_model
+    return Model.log(
+           ^^^^^^^^^^
+  File "C:\Users\Anurag\AppData\Local\Programs\Python\Python311\Lib\site-packages\mlflow\models\model.py", line 866, in log
+    mlflow.tracking.fluent.log_artifacts(local_path, mlflow_model.artifact_path, run_id)
+  File "C:\Users\Anurag\AppData\Local\Programs\Python\Python311\Lib\site-packages\mlflow\tracking\fluent.py", line 1219, in log_artifacts
+    MlflowClient().log_artifacts(run_id, local_dir, artifact_path)
+  File "C:\Users\Anurag\AppData\Local\Programs\Python\Python311\Lib\site-packages\mlflow\tracking\client.py", line 2018, in log_artifacts
+    self._tracking_client.log_artifacts(run_id, local_dir, artifact_path)
+  File "C:\Users\Anurag\AppData\Local\Programs\Python\Python311\Lib\site-packages\mlflow\tracking\_tracking_service\client.py", line 875, in log_artifacts
+    self._get_artifact_repo(run_id).log_artifacts(local_dir, artifact_path)
+  File "C:\Users\Anurag\AppData\Local\Programs\Python\Python311\Lib\site-packages\mlflow\store\artifact\local_artifact_repo.py", line 57, in log_artifacts
+    verify_artifact_path(artifact_path)
+  File "C:\Users\Anurag\AppData\Local\Programs\Python\Python311\Lib\site-packages\mlflow\store\artifact\artifact_repo.py", line 461, in verify_artifact_path
+    raise MlflowException(
+mlflow.exceptions.MlflowException: Invalid artifact path: 'mlruns/models/'. Names may be treated as files in certain cases, and must not resolve to other names when treated as such. This name would resolve to 'mlruns/models'
+2025-03-12 18:22:32,463 - INFO - Using existing experiment: Sleep_Efficiency_Prediction
+2025-03-12 18:22:32,509 - INFO - Pipeline Execution Started
+2025-03-12 18:22:45,217 - INFO - Data file found: C:\\Users\\Anurag\\OneDrive\\Desktop\\macine_operation\\mlflow_working\\DATA\Sleep_Efficiency.csv
+2025-03-12 18:22:45,481 - INFO - Data file found: C:\\Users\\Anurag\\OneDrive\\Desktop\\macine_operation\\mlflow_working\\DATA\Sleep_Efficiency.csv
+2025-03-12 18:22:45,633 - INFO - Data loaded successfully C:\\Users\\Anurag\\OneDrive\\Desktop\\macine_operation\\mlflow_working\\DATA\Sleep_Efficiency.csv
+2025-03-12 18:22:45,633 - INFO - File has been loaded successfully.
+2025-03-12 18:22:45,633 - INFO - Data loaded successfully C:\\Users\\Anurag\\OneDrive\\Desktop\\macine_operation\\mlflow_working\\DATA\Sleep_Efficiency.csv
+2025-03-12 18:22:45,633 - INFO - Dropping the na values because the na values are very less
+2025-03-12 18:22:45,633 - INFO - File has been loaded successfully.
+2025-03-12 18:22:45,633 - INFO - Dropping the na values because the na values are very less
+2025-03-12 18:22:45,763 - INFO - Successfully deleted the the na values Because values are less than the threshold 25 
+2025-03-12 18:22:45,764 - INFO - Dropping the unwanted columns after the EDA on the Data
+2025-03-12 18:22:45,764 - INFO - Dropping the unwanted columns after the EDA on the Data
+2025-03-12 18:22:46,049 - INFO - Encoding column: Gender
+2025-03-12 18:22:46,051 - INFO - Encoding column: Smoking status
+2025-03-12 18:22:46,051 - INFO - Encoding column: Smoking status
+2025-03-12 18:22:46,051 - INFO - Label encoding completed successfully!
+2025-03-12 18:22:46,051 - INFO - Label encoding completed successfully!
+2025-03-12 18:22:46,115 - INFO - Preprocessing and feature scaling completed successfully.
+2025-03-12 18:22:46,115 - INFO - Splitting the data into the train test
+2025-03-12 18:22:46,115 - INFO - Preprocessing and feature scaling completed successfully.
+2025-03-12 18:22:46,116 - INFO - Splitting the data into the train test
+2025-03-12 18:22:46,148 - INFO - Data successfully split into train and test. Train shape: (221, 11), Test shape: (56, 11).
+2025-03-12 18:22:46,148 - INFO - Training the RandomForestRegressor model..
+2025-03-12 18:22:46,148 - INFO - Data successfully split into train and test. Train shape: (221, 11), Test shape: (56, 11).
+2025-03-12 18:22:46,148 - INFO - Training the RandomForestRegressor model..
+2025-03-12 18:22:46,526 - INFO - Model Training completed successfully.
+2025-03-12 18:22:46,528 - INFO - Model trained successfully.
+2025-03-12 18:22:46,528 - INFO - Checking the r2_score of the model
+2025-03-12 18:22:46,535 - INFO - Model Training completed successfully.
+2025-03-12 18:22:46,535 - INFO - Model trained successfully.
+2025-03-12 18:22:46,535 - INFO - Checking the r2_score of the model
+2025-03-12 18:22:46,536 - INFO - The R2 scor of the Regression Model is 48.4170
+2025-03-12 18:22:46,536 - INFO - Saving the Model in the Directoery
+2025-03-12 18:22:46,541 - INFO - The R2 scor of the Regression Model is 45.5016
+2025-03-12 18:22:46,541 - INFO - Saving the Model in the Directoery
+2025-03-12 18:22:46,703 - INFO - Model dumped successfully.
+2025-03-12 18:22:46,704 - INFO - Model dumped successfully.
+2025-03-12 18:24:04,648 - INFO - \U0001f389 Pipeline Execution Completed Successfully!
+2025-03-12 18:29:24,304 - INFO - Using existing experiment: Sleep_Efficiency_Prediction
+2025-03-12 18:29:24,306 - INFO - Pipeline Execution Started
+2025-03-12 18:29:34,298 - INFO - Using existing experiment: Sleep_Efficiency_Prediction
+2025-03-12 18:29:34,300 - INFO - Pipeline Execution Started
+2025-03-12 18:29:38,275 - INFO - Data file found: C:\\Users\\Anurag\\OneDrive\\Desktop\\macine_operation\\mlflow_working\\DATA\Sleep_Efficiency.csv
+2025-03-12 18:29:38,304 - INFO - Data loaded successfully C:\\Users\\Anurag\\OneDrive\\Desktop\\macine_operation\\mlflow_working\\DATA\Sleep_Efficiency.csv
+2025-03-12 18:29:38,304 - INFO - File has been loaded successfully.
+2025-03-12 18:29:38,304 - INFO - Dropping the na values because the na values are very less
+2025-03-12 18:29:38,305 - INFO - Successfully deleted the the na values Because values are less than the threshold 25 
+2025-03-12 18:29:38,306 - INFO - Dropping the unwanted columns after the EDA on the Data
+2025-03-12 18:29:38,306 - INFO - Encoding column: Gender
+2025-03-12 18:29:38,307 - INFO - Encoding column: Smoking status
+2025-03-12 18:29:38,307 - INFO - Label encoding completed successfully!
+2025-03-12 18:29:38,322 - INFO - Preprocessing and feature scaling completed successfully.
+2025-03-12 18:29:38,322 - INFO - Splitting the data into the train test
+2025-03-12 18:29:38,324 - INFO - Data successfully split into train and test. Train shape: (221, 11), Test shape: (56, 11).
+2025-03-12 18:29:38,324 - INFO - Training the RandomForestRegressor model..
+2025-03-12 18:29:38,470 - INFO - Model Training completed successfully.
+2025-03-12 18:29:38,470 - INFO - Model trained successfully.
+2025-03-12 18:29:38,470 - INFO - Checking the r2_score of the model
+2025-03-12 18:29:38,475 - INFO - The R2 scor of the Regression Model is 43.9476
+2025-03-12 18:29:38,475 - INFO - Saving the Model in the Directoery
+2025-03-12 18:29:38,495 - INFO - Model dumped successfully.
+2025-03-12 18:29:52,859 - INFO - \U0001f389 Pipeline Execution Completed Successfully!
+2025-03-12 18:31:35,553 - INFO - Using existing experiment: Sleep_Efficiency_Prediction
+2025-03-12 18:31:35,554 - INFO - Pipeline Execution Started
+2025-03-12 18:31:36,281 - INFO - Data file found: C:\\Users\\Anurag\\OneDrive\\Desktop\\macine_operation\\mlflow_working\\DATA\Sleep_Efficiency.csv
+2025-03-12 18:31:36,285 - INFO - Data loaded successfully C:\\Users\\Anurag\\OneDrive\\Desktop\\macine_operation\\mlflow_working\\DATA\Sleep_Efficiency.csv
+2025-03-12 18:31:36,285 - INFO - File has been loaded successfully.
+2025-03-12 18:31:36,285 - INFO - Dropping the na values because the na values are very less
+2025-03-12 18:31:36,286 - INFO - Successfully deleted the the na values Because values are less than the threshold 25 
+2025-03-12 18:31:36,286 - INFO - Dropping the unwanted columns after the EDA on the Data
+2025-03-12 18:31:36,287 - INFO - Encoding column: Gender
+2025-03-12 18:31:36,288 - INFO - Encoding column: Smoking status
+2025-03-12 18:31:36,288 - INFO - Label encoding completed successfully!
+2025-03-12 18:31:36,305 - INFO - Preprocessing and feature scaling completed successfully.
+2025-03-12 18:31:36,305 - INFO - Splitting the data into the train test
+2025-03-12 18:31:36,308 - INFO - Data successfully split into train and test. Train shape: (221, 11), Test shape: (56, 11).
+2025-03-12 18:31:36,308 - INFO - Training the RandomForestRegressor model..
+2025-03-12 18:31:36,466 - INFO - Model Training completed successfully.
+2025-03-12 18:31:36,466 - INFO - Model trained successfully.
+2025-03-12 18:31:36,466 - INFO - Checking the r2_score of the model
+2025-03-12 18:31:36,471 - INFO - The R2 scor of the Regression Model is 46.0907
+2025-03-12 18:31:36,471 - INFO - Saving the Model in the Directoery
+2025-03-12 18:31:36,507 - INFO - Model dumped successfully.
+2025-03-12 18:31:44,417 - INFO - \U0001f389 Pipeline Execution Completed Successfully!

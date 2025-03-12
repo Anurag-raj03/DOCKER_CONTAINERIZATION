@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/Anurag/OneDrive/Desktop/macine_operation/mlflow_working/mlruns/768150599047721252/cc8bb3ed00494ad9a0e2a0dc1d9e650a/artifacts
+end_time: 1741784044857
+entry_point_name: ''
+experiment_id: '768150599047721252'
+lifecycle_stage: active
+run_id: cc8bb3ed00494ad9a0e2a0dc1d9e650a
+run_name: Sleep_Efficiency_Prediction Random Forest Regression Model
+run_uuid: cc8bb3ed00494ad9a0e2a0dc1d9e650a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1741783964809
+status: 3
+tags: []
+user_id: Anurag

@@ -1,0 +1,15 @@
+version: '3.8'
+services:
+  streamlit_app:
+    build: .
+    image: my_streamlit_app
+    container_name: sleep_efficiency_app
+    ports:
+      - "8501:8501"
+    volumes:
+      - ./streamlit_app:/app
+      - ./Saved_model:/app/Saved_model
+      - ./process:/app/process
+      - ./DATA:/app/DATA
+      - ./mlflow_tracking.log:/app/mlflow_tracking.log
+    restart: always
